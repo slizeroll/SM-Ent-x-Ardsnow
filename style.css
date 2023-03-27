@@ -1,0 +1,152 @@
+body {
+    min-height: 2000px;
+}
+
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: Teko;
+    font-size: 30px;
+}
+
+
+.jumbotron {
+    background-image: url(img/Aespa.webp);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0; 
+}
+
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 250;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+/* info KOTAK */
+.info-kotak {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: white;
+    padding: 15px;
+}
+
+.info-kotak img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.info-kotak h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-kotak p {
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+.groupidol {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.groupidol h3 {
+    font-size: 52px;
+    font-weight: 200;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.groupidol h3 span {
+    font-weight: 500;
+}
+
+.groupidol p {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+ .timbel {
+    text-transform: uppercase;
+    border-radius: 40px;
+ }
+
+
+
+/* Ukuran Dekstop */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 30px;
+    }
+
+   .nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #e60073;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+   }
+
+   .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+   }
+
+   .jumbotron .display-4 {
+    font-size: 62px;
+   }
+
+   .groupidol {
+    text-align: left;
+   }
+
+   .groupidol img {
+    margin-top: 70px;
+   }
+
+   .groupidol h3 {
+    margin-top: 60px;
+   }
+}
